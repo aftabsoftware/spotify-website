@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Word Riddle Game
+        </title>
+        <!--css-Link-Section-Start-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--css-Link-Section-End-->
+        <!--Bootstrap-Section-End-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!--Bootstrap-Section-End-->
+        <!--Animate-css-Section-Start-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!--Animate-css-Section-End-->
+    </head>
+    <body>
+        <div id="level-complete" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="image/level-complete.gif" alt="" id="gif" class="level-comp-gif" scrollamount="1">
+                        <h1 class="level-complete-title">LEVEL COMPLETED!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        <div id="main">
+        <div class="question-count-sec">
+            <div class="container">
+                <div class="row">
+                   <div class="col-md-6">
+                    <form class="form">
+                        <label>Questions You <br>Have Answer :</label><input type="text" value="" class="question-count-box" id="ques-count" disabled>
+                    </form>
+                   </div>
+                   <div class="col-md-6">
+
+                   </div>
+                </div>
+            </div>
+        </div>
+        
+       <!--============================================================================================================================
+            Question-Section-Box-Start
+        ================================================================================================================================-->
+        <div class="header-sec">
+           <div class="container">
+              <div class="row">
+                 <div class="col-md-12">
+                    
+                    <img src="image/logo.png" alt=""  class="animate__animated animate__fadeInDown logo">
+                    <img src="image/logo-2.png" alt="" class="animate__animated animate__backInLeft logo-2">
+                    <div class="animate__animated animate__bounceIn question-box" id="question">
+                        
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <!--============================================================================================================================
+            Question-Section-Box-End
+        ================================================================================================================================-->
+
+        <!--============================================================================================================================
+            Question-Option-Section-Start
+        ================================================================================================================================-->
+        <div class="btn-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                         
+                        <ul class="animate__animated animate__zoomIn primary-menu">
+                            <li class="primary-item"><a href="JavaScript:void(0);" class="animate__animated animate__flipInX menu-item option" id="wrong-1" onclick="check_answer()"></a></li>
+                            <li class="primary-item"><a href="JavaScript:void(0);" class="animate__animated animate__flipInX menu-item option" id="wrong-2" onclick="check_answer()"></a></li>
+                            <li class="primary-item"><a href="JavaScript:void(0);" class="animate__animated animate__flipInX menu-item option" id="correct" onclick="check_answer()"></a></li>
+                            <li class="primary-item"><a href="JavaScript:void(0);" class="animate__animated animate__flipInX menu-item option" id="wrong-3"  onclick="check_answer()"></a></li>
+                        </ul>
+                           
+                        <ul class="animate__animated animate__zoomIn game-btn-sec">
+                            <li class="start-btn"><a href="JavaScript:void(0);" class=" menu-item_1 game" id="start" onclick=" next_question()">Start Game</a></li>
+                            <li class=" start-btn"><a href="JavaScript:void(0);" class=" menu-item_1" id="next" value="Increment" onclick="next_question()">Next</a></li>
+                        </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="animate__animated animate__fadeInUp footer-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+         <!--============================================================================================================================
+            Question-Option-Section-End
+        ================================================================================================================================-->
+       
+        <!--============================================================================================================================
+            Java-Script-Section-Start
+        ================================================================================================================================-->
+        <script src="js/script.js"></script>
+        <script src="js/word.js"></script>
+        <!--============================================================================================================================
+            Java-Script-Section-End
+        ================================================================================================================================-->
+    </body>
+</html>
